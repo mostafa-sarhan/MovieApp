@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<head>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Movie App</title>
+</head>
+<body>
+    <nav class=" nav_1 position-fixed top-0 start-0 bg-transparent vh-100 p-3">
+        <div class="nav-logo pt-4">
+            <img src="image/logo.png" alt="">
+        </div>
+        <div class="nav-menu">
+            <i class="fa-solid fa-bars bars fs-4 icon_1"></i>
+            <!-- <i class="fa-solid fa-xmark close d-none"></i> -->
+        </div>
+        <div class="nav-social">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </nav>
+    <div class="nav_2 bg-black position-fixed top-0 bottom-0 start-0 ">
+        <div class="side-nav d-flex flex-column justify-content-end  text-white">
+            <div class="menu">
+                <ul class="overflow-hidden">
+                    <li class="pt-4 position-relative  now_playing"><a attr="now_playing">Now playing</a></li>
+                    <li class="pt-4 position-relative Popular"><a attr="popular" >Popular</a></li>
+                    <li class="pt-4 position-relative Top_Rated"><a attr="top_rated">Top Rated</a></li>
+                    <li class="pt-4 position-relative Trending"><a attr="trending">Trending</a></li>
+                    <li class="pt-4 position-relative Upcoming"><a attr="upcoming">Upcoming</a></li>
+                    <li class="pt-4 position-relative"><a href="#contact" class="text-white">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="copyrights">
+                <div class="rights-social">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-solid fa-globe"></i></a>
+                </div>
+                <p class="pt-3">Copyright © 2022 All Rights Reserved. <br>Created by <a  class="link-danger fw-bold" target="_blank">Mostata sarhan</a></p>
+            </div>
+        </div>
+    </div>
+    <section id="'hero" class="container py-5">
+        <input id="search" type="search" placeholder="Search" class="form-control w-50 mx-auto bg-transparent rounded-pill text-white shadow-none border-white px-3">
+        <div class="row g-4 mt-3 text-white" id="row">
+            <!-- <div class="col-lg-4 col-md-6 col-sm-12 animate__animated animate__fadeIn">
+                <div class="item overflow-hidden position-relative animate__fadeIn">
+                    <div class="cardImage animate__fadeIn">
+                        <img src="https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg" class="img-fluid w-100">
+                    </div>
+                    <div class="overlay overflow-hidden animate__fadeIn">
+                        <h1 class="animate__animated title animate__slideOutLeft">Inside Out 2</h1>    
+                        <p class="animate__animated desc animate__slideOutLeft">Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like ...</p>
+                        <p class="animate__animated date animate__slideOutLeft"><span class="fst-normal">Release Date<span> : 2024-06-11</span></span></p>
+                        <h3 class="rate animate__animated animate__slideOutLeft"><i class="fa-solid fa-star text-warning fs-6"></i><i class="fa-solid fa-star text-warning fs-6"></i><i class="fa-solid fa-star text-warning fs-6"></i><i class="fa-regular fa-star-half-stroke text-warning fs-6"></i></h3>
+                        <h3 class="rate animate__animated vote animate__slideOutLeft mt-4"><span class="rate_2">7.7</span></h3>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+    <section id="contact" class="container text-white py-5">
+        <h2>Contact US</h2>
+        <form>
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <input type="text" required="" id="name" maxlength="37" class="form-control mt-4" placeholder="Enter Your Name">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="email" required="" id="email" class="form-control mt-4" placeholder="Enter Your Email">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" required="" id="phone" class="form-control mt-4" placeholder="Enter Your Phone">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="number" required="" id="age" class="form-control mt-4" placeholder="Enter Your Age">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-6 position-relative">
+                    <input type="password" required="" id="password" class="form-control mt-4" placeholder="Enter Your Password">
+                    <span class="error"></span>
+                    <span class="showPass" style="opacity: 0; bottom: -20px;"><i data-show="show" class="fa-solid fa-eye-slash"></i></span>
+                </div>
+                <div class="col-md-6">
+                    <input type="password" required="" id="repassword" class="form-control mt-4" placeholder="ReEnter Password">
+                    <span class="error"></span>
+                </div>
+                <div class="col-md-12  mt-4">
+                    <button type="submit" class="form-btn rounded-2 mb-3 animate__animated">Submit</button>
+                </div>
+            
+        </div></form>
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
